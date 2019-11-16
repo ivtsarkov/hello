@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<script type = "text/javascript">
+	
+	alert ("Угадайте три загаки.\nУ вас по три попытки на каждую");
+	
+	let puzzle1 = prompt ("Зимой и летом одним цветом.\nЧто это?");
+	let answer1 = "елка";
+	let score = 0;
+	
+	for (var tryCount = 1; tryCount <= 3; tryCount++){
+		//if puzzle1 = елка || puzzle1 = ель || puzzle1 = елочка;
+		if (puzzle1 == answer1){
+			alert ("Вы угадали!");
+			score++;
+			break;
+		}else if (puzzle1 != answer1){
+			alert ("Вы ошиблись");
+		}
+		puzzle1 = prompt ("Попробуйте еще раз");
+	}
+	
+	let puzzle2 = prompt ("Четыре ушка, два брюшка. Что это?");
+	let answer2 = "подушка";
+	
+	for (var tryCount = 1; tryCount <= 3; tryCount++){
+		//if puzzle1 = елка || puzzle1 = ель || puzzle1 = елочка;
+		if (puzzle2 == answer2){
+			alert ("Вы угадали!");
+			score++;
+			break;
+		}else if (puzzle2 != answer2){
+			alert ("Вы ошиблись");
+		}
+		puzzle2 = prompt ("Попробуйте еще раз");
+	}
+	
+	let puzzle3 = prompt ("Ни окон, ни дверей, полна горница людей. Что это?");
+	let answer3 = "огурец";
+	
+	for (var tryCount = 1; tryCount <= 3; tryCount++){
+		//if puzzle1 = елка || puzzle1 = ель || puzzle1 = елочка;
+		if (puzzle3 == answer3){
+			alert ("Вы угадали!");
+			score++;
+			break;
+		}else if (puzzle3 != answer3){
+			alert ("Вы ошиблись");
+		}
+		puzzle3 = prompt ("Попробуйте еще раз");
+	}
+	
+	alert ("Ваш результат: " + score + " правильных ответа");
+			
+</script>

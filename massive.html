@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<script type = "text/javascript">
+
+	function massive(n){
+		let array = [];
+		for (i = 1; i <= n; i++){
+			array.push(i);
+			}
+			return array;
+	}
+	
+	function getArray(){
+		let array2 = [];
+		for (i = 0; i < 6 ; i++){
+			let getArrayNumbers = +prompt("Введите " + i + " число");
+			array2.push(getArrayNumbers);
+		}
+		let summArray2 = 0;
+		summArray2 = parseInt(summArray2)
+		for (i = 0; i < array2.lenth; i++){
+			summArray2 += array2[i];
+		}
+		return summArray2;
+	}
+	
+	alert ("Введите 5 чисел");
+	let getSumm = getArray();
+	alert ("Сумма элементов массива: " + getSumm);
+	
+	
+	/* Функция massive
+	let n = +prompt("Введите целое число");
+	let array = massive(n);
+	alert ("Массив: " + array);
+	*/
+	
+</script>

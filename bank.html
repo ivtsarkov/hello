@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script type = "text/javascript">
+
+	let summ = +prompt ("Введите сумму вклада");
+	let percent = +prompt ("Введите процент по вкладу");
+	percent = percent/100;
+	let year = 1;
+	let message = "Вклад по годам\n";
+	
+	while (year <= 5){
+		summ = summ + (summ*percent);
+		message += "Сумма за " + year + " год: " + summ + "\n";
+		year++;
+	}
+	
+	alert (message);
+		
+	
+</script>
